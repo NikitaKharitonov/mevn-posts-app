@@ -28,11 +28,11 @@ router.delete('/:id', async (req, res) => {
 
 async function loadPostsCollection() {
     const client = await mongodb.MongoClient.connect
-    ('mongodb+srv://helo:helo@cluster0.nlfxp.mongodb.net/fullstack-vue-express?retryWrites=true&w=majority', {
+    ('mongodb+srv://Nikita:1234@cluster0.ic1hq.mongodb.net/mern-posts-app?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
-    return client.db('fullstack-vue-express').collection('posts')
+    return client.db('mevn-posts-app').collection('posts')
 }
 
 module.exports = router
