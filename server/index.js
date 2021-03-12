@@ -7,6 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+// Post routes 
 const posts = require('./routes/api/posts')
 
 app.use('/api/posts', posts)
